@@ -1,0 +1,261 @@
+.catalog-container {
+  max-width: 100vw;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.search-bar {
+  height: 30px;
+  width: 300px; /* Increased the width for easier search */
+  padding: 10px;
+  margin: 20px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Category Filter */
+.category-filter {
+  margin: 20px 0;
+}
+
+.category-filter button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.category-filter button:hover {
+  background-color: #0056b3;
+}
+
+.category-filter .selected {
+  background-color: #B2BEB5;
+}
+
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+/* Ad Space */
+.ad-space {
+  width: 250px;
+  height: 350px;
+  background-color: #ffeeba;
+  border: 1px solid #ffc107;
+  border-radius: 5px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.ad-space.left {
+  order: -1;
+}
+
+.ad-space.right {
+  order: 1;
+}
+
+/* Product Grid Adjustments */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+/* Product Card */
+.product-card {
+  background: white;
+  border: 1px solid #ddd;
+  padding: 25px; /* Larger padding for more space */
+  border-radius: 10px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Stronger shadow */
+  max-width: 320px; /* Larger card width */
+  margin: 0 auto;
+  position: relative; /* Ensure the overlay can be placed */
+  overflow: hidden; /* Hide anything outside the card boundaries */
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.product-card img {
+  width: 200px; /* Larger image */
+  height: 200px; /* Larger image */
+  object-fit: contain; /* Maintain aspect ratio */
+  transition: transform 0.3s ease; /* Smooth transition for zoom */
+}
+
+.product-card:hover img {
+  transform: scale(1.2); /* Zoom in on hover */
+}
+
+.product-card h3 {
+  margin: 15px 0;
+  font-size: 24px; /* Larger title */
+  font-weight: bold;
+}
+
+.product-card h2 {
+  margin: 10px 0;
+  font-size: 20px; /* Larger price text */
+  color: #e74c3c; /* Highlight price color */
+}
+
+.product-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+@media (max-width: 900px) {
+  .content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ad-space {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .product-card {
+    max-width: 500px;
+  }
+
+  .product-card img {
+    width: 150px; /* Adjust image size for smaller screens */
+    height: 150px; /* Adjust image size for smaller screens */
+  }
+}
+
+.alphabet-sort {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.alphabet-sort button {
+  background-color: maroon;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: bold;
+}
+
+.alphabet-sort button:hover {
+  background-color: #B2BEB5;
+}
+
+.alphabet-sort .selected {
+  background-color: #B2BEB5;
+}
+
+.reset-button {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 3px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  font-weight: bold;
+}
+
+.reset-button:hover {
+  background-color: darkgray;
+}
+
+.marca-filter {
+  margin: 20px 0;
+}
+
+.marca-filter button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 20px;
+}
+
+.marca-filter button:hover {
+  background-color: #218838;
+}
+
+.marca-filter .selected {
+  background-color: #B2BEB5;
+}
+
+/* Pagination Controls */
+.pagination-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.pagination-controls button {
+  padding: 10px 20px;
+  margin: 0 10px;
+  background-color: #fff;
+  color: maroon;
+  border: 2px solid maroon;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pagination-controls button:disabled {
+  background-color: #cccccc;
+  color: #aaa;
+  cursor: not-allowed;
+  border: 2px solid #aaa;
+}
+
+.pagination-controls span {
+  font-size: 16px;
+}
+
+.pagination-controls button svg {
+  width: 20px;
+  height: 20px;
+}
+
+/* Hover Effect */
+.pagination-controls button:hover {
+  background-color: maroon;
+  color: white;
+  border: 2px solid maroon;
+}

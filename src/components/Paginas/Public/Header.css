@@ -1,0 +1,108 @@
+.logo-img {
+  height: 250px; /* Adjust the height */
+  width: auto;  /* Maintain aspect ratio */
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Container for the logo */
+.logo-container {
+  padding: 10px;
+  border-radius: 10px; /* Rounded corners */
+  background-color: #fff; /* Background color */
+}
+
+/* Container for the nav items */
+.nav-container {
+  padding: 10px;
+  border-radius: 10px; /* Rounded corners */
+  background-color: #fff; /* Background color */
+}
+
+.nav {
+  display: flex;
+  gap: 100px;
+}
+
+.nav-item {
+  font-family: "Roboto-Regular";
+  font-weight: 400;
+  position: relative;
+  font-size: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Increased gap for better spacing */
+  color: #841939;
+}
+
+.nav-item:hover {
+  color: #841939;
+}
+
+.dropdown {
+  position: absolute;
+  font-family: "Roboto-Regular";
+  font-weight: 400;
+  font-size: 0.7em;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  list-style: none;
+  padding: 5px;
+  margin: 0;
+  z-index: 1000;
+}
+
+.dropdown li {
+  padding: 10px 15px;
+}
+
+.dropdown li:hover {
+  background-color: #f1f1f1;
+}
+
+/* Container for the agenda link */
+.agenda-container {
+  padding: 10px;
+  border: 2px solid #841939; /* Rectangle border */
+  border-radius: 10px; /* Rounded corners */
+  background-color: #fff; /* Background color */
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-link {
+  font-family: "Roboto-Regular";
+  font-weight: 400;
+  font-size: 30px;
+  color: #841939;
+  text-decoration: none;
+}
+
+.header-link:hover {
+  color: #3498db;
+}
+
+.icon-search {
+  font-size: 30px;
+  cursor: pointer;
+  color: #841939;
+}
+
+.icon-search:hover {
+  color: #3498db;
+}
