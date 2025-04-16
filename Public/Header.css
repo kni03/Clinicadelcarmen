@@ -1,0 +1,72 @@
+.logo-img {
+  height: 250px;
+  width: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  box-shadow: 0 10px 10px black;
+  background-size: cover;
+  background-position: center;
+}
+
+.logo-container {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.nav-container {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.nav {
+  display: flex;
+  padding-right: 450px;
+  gap: 100px;
+}
+
+.nav-item {
+  font-family: "Georgia";
+  font-weight: 400;
+  position: relative;
+  font-size: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 20px; 
+  color: #841939;
+}
+
+.nav-item:hover {
+  color: #841939;
+}
+
+.agenda-container {
+  padding: 10px;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header-link {
+  font-family: "Georgia";
+  font-weight: 400;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+}
+
+.header-link:hover {
+  color: #3498db;
+}

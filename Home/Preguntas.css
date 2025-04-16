@@ -1,0 +1,82 @@
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+.preguntas-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.faq-container, .testimonials-container {
+  flex: 1;
+  width: 50%;
+  max-width: 50%;
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 40px;
+  font-family: "Georgia";
+  background-color: #941b50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px maroon;
+  max-width: 1800px;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-size: 50px;
+  color: #333;
+}
+
+.faq-answer {
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  color: white;
+  background-color: #941b50;
+  font-size: 30px;
+}
+
+/* Testimonials Container */
+.testimonials-container {
+  position: relative;
+  max-width: 1700px; /* Maintain the max-width */
+  margin: 0 auto; /* Center horizontally */
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex; /* Enable Flexbox for centering */
+  flex-direction: column; /* Stack elements vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  text-align: center; /* Center text inside the container */
+}
+
+/* Testimonial Item */
+.testimonial-item {
+  margin: 0 auto 20px auto; /* Centers each testimonial and adds bottom spacing */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px; /* Adds inner spacing */
+  background-color: #fff;
+  box-shadow: 0 4px 8px maroon;
+  font-size: 27px;
+  max-width: 800px; /* Restricts the width of each testimonial */
+  text-align: center; /* Centers the text inside the testimonial */
+  box-sizing: border-box;
+}

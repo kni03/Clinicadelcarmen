@@ -1,0 +1,152 @@
+.services-container {
+  padding: 50px;
+  text-align: center;
+  background-color: transparent; /* Make the overall component background transparent */
+}
+
+.services-title {
+  font-family: "Georgia";
+  font-size: 4rem;
+  margin-bottom: 30px;
+  color: white;
+  text-align: left; /* Left align the title */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #941b50;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px maroon;
+}
+
+.services-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.service-card {
+  background-color: transparent; /* Make the service card background transparent */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px maroon;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  transition: transform 0.3s ease;
+  align-items: stretch; /* Stretch to the full width */
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+}
+
+.service-content-container {
+  display: flex;
+  align-items: center; /* Center align the content */
+  gap: 20px;
+  padding: 20px;
+}
+
+.service-icon {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: floralwhite;
+}
+
+.service-content {
+  flex: 1;
+}
+
+.service-title {
+  font-size: 3rem;
+  margin: 0;
+  color: whitesmoke;
+}
+
+.service-description {
+  font-size: 2rem;
+  margin-top: 10px;
+  color: whitesmoke;
+}
+
+.service-dropdown-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.service-dropdown {
+  padding: 20px;
+  background-color: white;
+  border-top: 1px solid #ddd;
+}
+
+.consultation-info {
+  font-size: 35px;
+}
+
+.appointment-button {
+  font-family: "Georgia";
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #941b50;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.appointment-button:hover {
+  background-color: #800000;
+}
+
+.doctors-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns grid */
+  gap: 20px;
+}
+
+.doctor-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.doctor-card p, .doctor-card ul {
+  font-size: 1.55rem; /* Larger text size */
+  color: #333;
+}
+
+.doctor-services-list {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .service-content-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-icon {
+    width: 100%;
+  }
+
+  .service-content {
+    align-items: center;
+    text-align: center;
+  }
+
+  .doctors-grid {
+    grid-template-columns: 1fr; /* One column grid on smaller screens */
+  }
+}
